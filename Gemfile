@@ -8,10 +8,12 @@ gem 'bootsnap', '1.3', require: false # Reduces boot times through caching; requ
 gem 'pg', '~> 1.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.0'
-gem 'rubocop', '~> 0.58.0'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'rspec-rails', '~> 3.7'
+  gem 'rubocop', '~> 0.58.0'
+  gem 'rubocop-rspec', '~> 1.27.0'
 end
 
 group :development do
