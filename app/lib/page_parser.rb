@@ -61,7 +61,7 @@ class PageParser
 
   def parse_tag(document:, selector:, attribute: nil)
     document.css(selector.to_s).map do |elem|
-      attribute ? elem.attr(attribute.to_s) : elem.text
+      attribute ? elem.attr(attribute.to_s) : elem.text.strip
     end.compact
   end
 end
